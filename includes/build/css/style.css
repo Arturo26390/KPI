@@ -1,0 +1,249 @@
+/* FUENTES*/
+@font-face{
+    font-family: "fajala";
+    src: url(../fonts/fuente.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*  GENERALES  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Helvetica, Arial;
+    text-decoration: none;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+body{
+    background-image: url("../images/fondo1.png");
+}
+
+/* CABECERA */
+#cabecera{
+    width: 85%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto;
+    /*border: 1px solid black;*/
+}
+
+/* LOGOTIPO */ 
+#logo{
+    float: left;
+    width: 540px;
+    height: 110px;
+}
+
+#logo a{
+    font-family: "fajala", Helvetica;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #2979CD;
+    text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+    transition: all 500ms;
+    line-height: 90px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#logo a:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 0px black, -1px -1px 0px black, -2px -2px 0px black;
+}
+
+/* MENU */
+#menu{
+    clear: both;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, #f9f9f9 0px, #979595 100%);
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px #ccc;
+    overflow: hidden;
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu ul li{
+    float: left;
+    line-height: 44px;
+    border-right: 1px solid #d6d6d6;
+}
+
+#menu ul li:hover{
+    background: linear-gradient(to bottom, #f2f2f2 0px, #c7c09b 100%);
+}
+
+#menu ul li a{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #838282;
+}
+
+/* CONTENIDO*/
+
+#contenedor{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+/* PRINCIPAL*/
+
+#principal{
+    /*float: left;*/
+    width: 100%;
+    min-height: 550px;
+    background: #B9B9B9;
+    opacity: .8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #008000;
+    margin-left: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#principal a{
+    color: #333;
+}
+
+#principal h1{
+    font-size: 34px;
+    color: #444444;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #ccc;
+    font-family: "fajala";
+}
+
+#principal h2{
+    font-size: 20px;
+    color: #2979CD;
+    letter-spacing: 1px;
+    font-family: "fajala";
+    text-shadow: 1px 1px 2px #ccc;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#principal h3{
+    font-size: 20px;
+    color: #444444;
+    letter-spacing: 1px;
+    font-family: "fajala";
+    text-shadow: 1px 1px 2px #ccc;
+    margin-top: 25px;
+}
+
+#principal p{
+    margin-top: 8px;
+}
+
+/* LISTA */
+
+#lista{
+    text-align: center;
+    width: 100%;
+}
+
+#intervalo_fechas, #intervalo_fechas_2, #mes_cierre, #semana_cierre{
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.derecha{
+    margin:0 auto; 
+    float: right;
+    width: 50%;
+}
+
+.izquierda{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.derecha1{
+    float: right;
+	width: 33%;
+	text-align: center;
+}
+
+.izquierda1{
+	float: left;
+	text-align: center;
+	width: 33%;
+}
+
+.centro{
+    display:inline-block;
+	width: 33%;
+}
+
+/* ESTILOS PARA LA GRAFICA */
+.centro1{
+    display: flex;
+    justify-content: center;
+}
+
+.centro2{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+	width: 100%;
+}
+
+/* ESTILO PARA LA TABLA */
+
+.detallePedimentos th{
+    color: #2979CD;
+    font-size: 14px;
+}
+
+.detallePedimentos td{
+    font-size: 11px;
+    color: #444444;
+}
+
+
+.botones {
+	border: none;
+	background:#0ab3b9;
+	color: #FFFFFF;
+	padding: 5px;
+	font-size: 14px;
+	font-family: Calibri;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease;
+	cursor:pointer; cursor: hand;
+	height: 30px;
+	width: 130px;
+}
+
+.contenedorReporte{
+    /*float: left;*/
+    width: 100%;
+    min-height: 50px;
+    background: #B9B9B9;
+    opacity: .8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #008000;
+    margin-left: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
